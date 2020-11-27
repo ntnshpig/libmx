@@ -14,5 +14,7 @@ char *mx_strjoin(char const *s1, char const *s2) {
     char *temp1 = mx_strdup(s1);
     char *temp2 = mx_strdup(s2);
     result = mx_strcat(temp1, temp2);
+    mx_strdel(&temp1);
+    mx_strdel(&temp2);
     return result;
 }
