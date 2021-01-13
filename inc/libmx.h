@@ -52,7 +52,7 @@ char *mx_strstr(const char *s1, const char *s2); //////100/////++++
 int mx_get_substr_index(const char *str, const char *sub);//////100/////++++++++
 int mx_count_substr(const char *str, const char *sub);/////////75???////////+++++
 int mx_count_words(const char *str, char c);//////100/////---++
-char *mx_strtrim(const char *str);//////75?/////+++++
+char *mx_strtrim(const char *str);//////75???/////+++++
 char *mx_del_extra_spaces(const char *str);//////100/////+++++++
 char **mx_strsplit(char const *s, char c);//////100/////+++++++
 char *mx_strjoin(char const *s1, char const *s2);//////75???/////++++
@@ -80,7 +80,7 @@ t_list *mx_create_node(void *data);//////100/////+++++++
 void mx_push_front(t_list **list, void *data);//////100/////+++++++
 void mx_push_back(t_list **list, void *data);//////100/////+++++++
 void mx_pop_front(t_list **head);//////60????/////+++++++
-void mx_pop_back(t_list **head);//////100/////+++++++!!
-int mx_list_size(t_list *list);//////100/////---++!!
+void mx_pop_back(t_list **head);//////100/////+++++++
+int mx_list_size(t_list *list);//////100/////---++
 t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));//////100/////++++++
 #endif
